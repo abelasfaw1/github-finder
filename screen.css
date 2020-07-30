@@ -8,7 +8,7 @@ input[type="text"] {
     border: 1px solid #ced4da;
 }
 
-/* add hover effect on non-touch screen devices */
+/* add hover effect only non-touch screen devices */
 @media(hover: hover) and (pointer: fine) {
     /* add transition for the View Profile button */
     .row a.btn {
