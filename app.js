@@ -110,14 +110,27 @@ class UI {
 
 // Initialize UI
 const ui = new UI();
+
 // Initialize GitHub
 const gitHub = new GitHub();
-// Search Input
-document.getElementById('search-user').addEventListener('input', searchUser); 
 
-function searchUser() {
+// Input Field
+const searchUser = document.getElementById('search-user');
+
+// Remove Border On Input Focus
+searchUser.addEventListener('focus', () => {
+    searchUser.style.border = 'none';
+});
+
+// Add Border Back on Blur
+searchUser.addEventListener('blur', () => {
+    searchUser.style.border = '1px solid #ced4da';
+});
+
+// Search Input
+searchUser.addEventListener('input', (e) => {
     // get text being typed in
-    const userText = this.value;
+    const userText = e.target.value;
     if (userText !== '') {
         // make http call
         gitHub.getUser(userText)
@@ -143,4 +156,4 @@ function searchUser() {
         ui.clearProfile();
         ui.clearAlert();
     }
-};
+});

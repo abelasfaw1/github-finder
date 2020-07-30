@@ -19,6 +19,7 @@ input::placeholder {
 
 input[type="text"] {
     border: 1px solid #ced4da;
+    border-radius: 2px;
 }
 
 /* add hover effect only non-touch screen devices */
