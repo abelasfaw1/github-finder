@@ -1,0 +1,23 @@
+/* increase font-size for placeholder and input text */
+input[type="text"],
+input::placeholder {
+    font-size: medium;
+}
+
+input[type="text"] {
+    border: 1px solid #ced4da;
+}
+
+/* add transition for the View Profile button */
+.row a.btn {
+    border: .5px solid rgb(0, 0, 0);
+    background: linear-gradient(black, black 50%, white 50%, white);
+    background-size: 100% 200%;
+    transition: all 0.2s ease;
+}
+
+/* add transition for the View Profile button */
+.row a:hover {
+    background-position: 100% 100%;
+    color: black;
+}
