@@ -2,15 +2,6 @@ body {
     font-family: 'DM Sans', Lato, "Lucida Grande", Tahoma, Sans-Serif;
 }
 
-.container .navbar-brand {
-    transition: all 0.2s ease;
-}
-
-.container .navbar-brand:hover {
-    transform: scale(1.1);
-    transition: all 0.2s ease;
-}
-
 /* increase font-size for placeholder and input text */
 input[type="text"],
 input::placeholder {
@@ -24,6 +15,15 @@ input[type="text"] {
 
 /* add hover effect only non-touch screen devices */
 @media(hover: hover) and (pointer: fine) {
+
+    .container .navbar-brand {
+        transition: all 0.2s ease;
+    }
+
+    .container .navbar-brand:hover {
+        transform: scale(1.1);
+        transition: all 0.2s ease;
+    }
 
     /* add transition for the View Profile button */
     .row a.btn {
