@@ -35,7 +35,7 @@ input[type="text"] {
     }
 
     /* add transition for the View Profile button */
-    .row a:hover {
+    .row a.btn:hover {
         background-position: 100% 100%;
         color: white;
     }
