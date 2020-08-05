@@ -77,7 +77,7 @@ class UI {
             <div class="card card-body mb-3">
                 <div class="row">
                     <div class="col-md-6">
-                        ${user.login} doesn’t have any public repositories yet.
+                        <em>${user.login}</em> doesn’t have any public repositories yet.
                     </div>
                 </div>
             </div>`
