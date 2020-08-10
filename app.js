@@ -42,9 +42,9 @@ class UI {
                     <span class="badge badge-info">Following: ${user.following}</span>
                     <br><br>
                     <ul class="list-group">
-                        <li class="list-group-item">Company: ${user.company == null ? 'N/A' : user.company}</li>
-                        <li class="list-group-item">Website/Blog: ${user.blog == '' ? 'N/A' : user.blog}</li>
-                        <li class="list-group-item">Location: ${user.location == null ? 'N/A' : user.location}</li>
+                        <li class="list-group-item">Company: ${user.company === null ? 'N/A' : user.company}</li>
+                        <li class="list-group-item">Website/Blog: ${user.blog === '' ? 'N/A' : user.blog}</li>
+                        <li class="list-group-item">Location: ${user.location === null ? 'N/A' : user.location}</li>
                         <li class="list-group-item">Member Since: ${user.created_at === null ? 'N/A' : user.created_at}</li>
                     </ul>
                 </div>
